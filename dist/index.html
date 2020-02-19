@@ -7,11 +7,14 @@
       src="https://kit.fontawesome.com/92cbda4984.js"
       crossorigin="anonymous"
     ></script>
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Weather App</title>
   </head>
   <body>
-    <input id="cityInput" type="text" placeholder="Which City?" />
-    <button id="searchCity">search</button>
+      <div id="inputSearch">
+          <input id="cityInput" type="text" placeholder="Which City?" />
+          <span id="searchCity"><i class="fas fa-search"></i></span>
+      </div>
 
     <div id="cityData"></div>
 
@@ -24,10 +27,9 @@
             <div class="save"><i class="fas fa-plus-square"></i></div>
             {{/if}}
             <p class="name">{{name}}</p>
-              <p>{{temperature}}</p>
-              <p>{{condition}}</p>
+            <p>{{condition}}</p>
+            <p>{{temperature}}</p>
               <img src="http://openweathermap.org/img/wn/{{conditionPic}}@2x.png">
-
           </div>
       {{/each}}
     </script>
