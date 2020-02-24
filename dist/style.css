@@ -1,0 +1,40 @@
+body {
+  background: url("http://eskipaper.com/images/blue-wallpaper-3.jpg");
+}
+
+.city {
+  border-style: solid;
+  border-width: 1px;
+  border-color: cornsilk;
+  color: cornsilk;
+  display: grid;
+  grid-template-columns: repeat(5, 2fr);
+  align-items: center;
+  justify-content: start;
+  justify-items: center;
+  margin-top: 10px;
+  padding: 2px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: small;
+  background-color: rgba(40, 24, 82, 0.74);
+  text-align: center;
+}
+
+.city:hover {
+    opacity: 0.9;
+}
+
+#searchCity {
+    color: seashell;
+    font-size: 6vw;
+}
+
+input {
+    border-style: groove;
+    width: 82vw;
+    margin-right: 3vw;
+    height: 10vw;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    padding-left: 5px;
+}
